@@ -3,8 +3,8 @@ using MediatR;
 
 namespace MdtrSample.Requests
 {
-  public class AddStuffRequest : IRequest<bool>
+  public class GetStuffByIdRequest : IRequest<Stuff>
   {
-    public Stuff Stuff { get; set; }
+    public Guid Id { get; set; }
   }
 }

@@ -2,7 +2,7 @@
 
 namespace MdtrSample.Requests
 {
-  public class ByIdRequest : IRequest<Guid>
+  public class RemoveStuffRequest : IRequest<bool>
   {
     public Guid Id { get; set; }
   }

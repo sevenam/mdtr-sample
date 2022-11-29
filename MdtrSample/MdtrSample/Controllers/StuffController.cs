@@ -1,5 +1,6 @@
 ﻿using MdtrSample.Models;
 using MdtrSample.Services;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MdtrSample.Controllers
@@ -9,10 +10,12 @@ namespace MdtrSample.Controllers
   public class StuffController : ControllerBase
   {
     private readonly IStuffService stuffService;
+    private readonly IMediator mediator;
 
-    public StuffController(IStuffService stuffService)
+    public StuffController(IStuffService stuffService, IMediator mediator)
     {
       this.stuffService = stuffService;
+      this.mediator = mediator;
     }
 
     [HttpGet("stuff")]

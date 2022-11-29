@@ -1,0 +1,11 @@
+
+MdtrSample/obj/*
+MdtrSample/bin/*
+.vs/*
+MdtrSample/.vs/MdtrSample/v17/
+
+MdtrSample/.vs/MdtrSample/FileContentIndex/
+
+MdtrSample/MdtrSample/obj/Debug/net6.0/
+
+MdtrSample/MdtrSample/obj/
